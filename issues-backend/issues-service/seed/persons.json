@@ -1,0 +1,187 @@
+[
+  {
+    "gender": "male",
+    "name": {
+      "title": "mr",
+      "first": "tony",
+      "last": "frazier"
+    },
+    "location": {
+      "street": "2605 railroad st",
+      "city": "townsville",
+      "state": "new south wales",
+      "postcode": 9363
+    },
+    "email": "tony.frazier@example.com",
+    "login": {
+      "username": "heavypanda775",
+      "password": "diamonds",
+      "salt": "TGT8ESio",
+      "md5": "e38f1204349fa68e0179592d0c8bd0a3",
+      "sha1": "485c9ec2e6db800772d6efd92a116e2c5e1e2460",
+      "sha256": "b1f4f41904647bd22ecdcf78737ad7f4daf21989f5f99455833a9655520eea2e"
+    },
+    "dob": "1973-11-17 23:45:07",
+    "registered": "2008-01-07 18:18:45",
+    "phone": "07-6916-1431",
+    "cell": "0430-062-550",
+    "id": {
+      "name": "TFN",
+      "value": "457769665"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/8.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/8.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/8.jpg"
+    },
+    "nat": "AU"
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "miss",
+      "first": "diane",
+      "last": "reyes"
+    },
+    "location": {
+      "street": "7511 e sandy lake rd",
+      "city": "ennis",
+      "state": "pennsylvania",
+      "postcode": 84586
+    },
+    "email": "diane.reyes@example.com",
+    "login": {
+      "username": "bigleopard350",
+      "password": "bills",
+      "salt": "HMnUMj0l",
+      "md5": "cc856defbb702f3b456b7e50d98a6142",
+      "sha1": "70b81806e0cbd004cc08781b2345f620faed538b",
+      "sha256": "e36e5d58d19f680fb1aca8fa984e181576298642cb5fc65025b9d0d282a84620"
+    },
+    "dob": "1958-11-19 07:07:41",
+    "registered": "2006-04-03 22:07:43",
+    "phone": "(199)-265-3107",
+    "cell": "(317)-698-5295",
+    "id": {
+      "name": "SSN",
+      "value": "037-33-0754"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/49.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/49.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/49.jpg"
+    },
+    "nat": "US"
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "mr",
+      "first": "christian",
+      "last": "rasmussen"
+    },
+    "location": {
+      "street": "2405 østparken",
+      "city": "aarhus",
+      "state": "midtjylland",
+      "postcode": 81630
+    },
+    "email": "christian.rasmussen@example.com",
+    "login": {
+      "username": "ticklishleopard510",
+      "password": "luna",
+      "salt": "AZlHYCSL",
+      "md5": "7a2cd102b79cc1d6c5521288bc6ae4a1",
+      "sha1": "348279fd4e5d0685de43760f4b96181ab0850091",
+      "sha256": "d1f06eef59f31bf3bce7fb1454f432ff826844ac3556c5a61f19a73caf2cf497"
+    },
+    "dob": "1960-05-08 16:06:03",
+    "registered": "2015-08-29 19:56:06",
+    "phone": "27683311",
+    "cell": "95895997",
+    "id": {
+      "name": "CPR",
+      "value": "078579-5127"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/78.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/78.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/78.jpg"
+    },
+    "nat": "DK"
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "mr",
+      "first": "nino",
+      "last": "dumas"
+    },
+    "location": {
+      "street": "9717 boulevard de la duchère",
+      "city": "brest",
+      "state": "bouches-du-rhône",
+      "postcode": 23550
+    },
+    "email": "nino.dumas@example.com",
+    "login": {
+      "username": "browncat699",
+      "password": "breast",
+      "salt": "23ToNsSS",
+      "md5": "fef0e27fa357facbdbc01edf9a1bf30e",
+      "sha1": "9e51e4f3165e132045d1f4e55391e0f10ebc55a5",
+      "sha256": "e21b60e226d1009e76a7d9ea766429b95d034614f2bd40aa5d0487bec66862ce"
+    },
+    "dob": "1963-08-20 12:15:31",
+    "registered": "2006-08-05 00:31:25",
+    "phone": "05-63-37-65-49",
+    "cell": "06-96-60-35-55",
+    "id": {
+      "name": "INSEE",
+      "value": "163729028071 60"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/33.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/33.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg"
+    },
+    "nat": "FR"
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "ms",
+      "first": "christina",
+      "last": "arnold"
+    },
+    "location": {
+      "street": "4367 main street",
+      "city": "gorey",
+      "state": "kerry",
+      "postcode": 21094
+    },
+    "email": "christina.arnold@example.com",
+    "login": {
+      "username": "beautifulmouse638",
+      "password": "bobby",
+      "salt": "SBogxb18",
+      "md5": "a560b63125f559249fd963c1dc2c7459",
+      "sha1": "e56fcd2eb35f4f8c99e96961f3b376f9fa46c6ac",
+      "sha256": "2ed7c47ed123cc062f019c6178a325499bbf3ee66c3ba854ce9db6563de0ed5e"
+    },
+    "dob": "1970-03-03 02:04:16",
+    "registered": "2009-10-04 01:13:37",
+    "phone": "061-191-2999",
+    "cell": "081-776-3238",
+    "id": {
+      "name": "PPS",
+      "value": "9985248T"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/89.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/89.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/89.jpg"
+    },
+    "nat": "IE"
+  }
+]

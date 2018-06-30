@@ -1,0 +1,29 @@
+nav {
+    background: #2D2E2E;
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+
+            a {
+                color: #fff;
+                padding: 20px;
+                display: block;
+                transition:all 0.5s ease;
+                
+                i {
+                    font-size: 28px;
+                }
+            }
+
+            .activated {
+                background-color: #00a8ff;
+            }
+        }
+    }
+    
+}

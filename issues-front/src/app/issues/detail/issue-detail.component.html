@@ -1,0 +1,17 @@
+<div id="issue-detail" *ngIf="issue">
+    <ng-container>
+        <mat-card class="issue-card">
+                    <h1>{{issue.title}} 
+                        <div class="created-time"> 
+                            <i class="material-icons"> calendar_today </i>  
+                            &nbsp; {{issue.createdAt | date : format : timezone}} 
+                        </div> 
+                    </h1>
+                <mat-card-subtitle>{{issue.description}}</mat-card-subtitle>
+                <div class="flex-spacer"></div>
+            <div class="issue-info"> 
+                <span class="updated-time"> Updated {{updatedSince}} ago </span>
+            </div>
+        </mat-card>
+    </ng-container>
+</div>

@@ -1,0 +1,28 @@
+.issue {
+    color: rgb(73, 73, 73);
+    background-color: white;
+    transition:all 1s ease;
+    &:hover{
+        background-color: #fcfcfc9a;
+    }
+
+    .issue-title{
+        font-size: 0.8em;
+        float: left;
+        text-align: left;
+        width: 90%;
+    }
+
+    .issue-id {
+        text-align: right;
+        float: right;
+        font-size: 2.3em;
+        color: #a7a7a7;
+        text-decoration: none;
+    }
+   
+    .toolbox {
+        padding-top: 20px;
+    }
+}
+

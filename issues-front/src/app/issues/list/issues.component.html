@@ -1,0 +1,22 @@
+<h1>Issues</h1>
+
+<!-- <mat-card *ngFor="let issue of issues$">
+  <mat-card-header>
+    <mat-card-title>{{issue.title}}</mat-card-title>
+    <mat-card-subtitle>{{issue.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+  </mat-card-actions>
+</mat-card> -->
+
+
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile class="issue"  *ngFor="let issue of issues$">
+    <div layout="row" layout-align="left left" class="issue-title">
+      <a routerLink="issue/{{issue.id}}" class="issue-id"> #{{issue.id}} </a>
+      <h2>{{issue.title}}</h2>
+      <span> {{ (issue.description.length>30)? (issue.description | slice:0:30)+'..':(issue.description) }}</span>
+      <div class="toolbox">  </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,186 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Issues App
+# during dev, should point to your local machine
+host: localhost:8000
+# basePath prefixes all resource paths
+basePath: /
+#
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /users:
+    x-swagger-router-controller: user
+    get:
+      description: Get all user of the system
+      # used as the method name of the controller
+      operationId: getAllUsers
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/User"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /user/{id}:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: user
+    parameters:
+      - name: id
+        in: path
+        description: the id of the user to retrieve
+        required: true
+        type: string
+    get:
+      description: Get a specific user by id
+      # used as the method name of the controller
+      operationId: getUser
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/User"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /user/{id}/issues:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: user
+    parameters:
+      - name: id
+        in: path
+        description: the id of the user to retrieve issues
+        required: true
+        type: string
+    get:
+      description: Get issues of a user
+      # used as the method name of the controller
+      operationId: getUserIssues
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/User"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /user/search/{text}:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: user
+    parameters:
+      - name: text
+        in: path
+        description: the text of the search to retrieve
+        required: true
+        type: string
+    get:
+      description: Get a specific user by text search
+      # used as the method name of the controller
+      operationId: search
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/User"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /issues:
+    x-swagger-router-controller: issue
+    get:
+      description: Get all user of the system
+      # used as the method name of the controller
+      operationId: getAllIssues
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Issue"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /issues/{id}:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: issue
+    parameters:
+      - name: id
+        in: path
+        description: the id of the issue to retrieve
+        required: true
+        type: string
+    get:
+      description: Get a specific issue by id
+      # used as the method name of the controller
+      operationId: getIssue
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/Issue"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  User:
+    properties:
+      id:
+        type: number
+      gender:
+        type: string
+      title:
+        type: string
+      first:
+        type: string
+      last:
+        type: string
+      email:
+        type: string
+      username:
+        type: string
+      registered:
+        type: number
+      dob:
+        type: number
+      phone:
+        type: string
+      cell:
+        type: string
+      picture:
+        type: string
+  Issue:
+    properties:
+      id:
+        type: number
+      title:
+        type: string
+      description:
+        type: string

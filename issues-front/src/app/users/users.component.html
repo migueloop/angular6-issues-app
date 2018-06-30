@@ -1,0 +1,21 @@
+<h1>Users</h1>
+
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile class="user-list"  *ngFor="let user of users$">
+    <mat-card class="profile {{user.gender}}">
+      <mat-card-header>
+        <img mat-card-sm-image mat-card-avatar src="{{user.picture}}" class="profile-picture">
+        <div layout="row" layout-align="end center">
+          <mat-card-title>{{user.first | uppercase}} {{user.last | uppercase}}</mat-card-title>
+          <mat-card-subtitle>@{{user.username}}</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <ul class="profile-desc">
+          <li><i class="material-icons"> phone_android </i> {{user.cell}} <i class="material-icons"> local_phone </i> {{user.phone}} </li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
