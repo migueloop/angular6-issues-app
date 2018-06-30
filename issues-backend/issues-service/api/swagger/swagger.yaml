@@ -184,3 +184,9 @@ definitions:
         type: string
       description:
         type: string
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
